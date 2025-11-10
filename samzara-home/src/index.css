@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+@import "react-quill-new/dist/quill.snow.css";
+body{
+  background-color:white ;
+   font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}  
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #2a2a72;      /* button background */
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  margin-right: 42px;
+}
+
+.arrows {
+  width: 25px;   /* fit inside button */
+  height: 25px;
+  display: block;
+}
+
+.arrows path {
+  stroke: #ffffff;          /* white arrows */
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% { opacity: 0; }
+  40% { opacity: 1; }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+}
+.arrows path.a2 {
+  animation-delay: -0.5s;
+}
+.arrows path.a3 {
+  animation-delay: 0s;
+}
+
+@media (max-width: 768px) {
+  .scroll-btn {
+    margin-right: 0;
+  }
+}
+
+.custom-content p {
+  color: rgba(90,91,92);
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 640px) { /* Tablet (sm) */
+  .custom-content p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) { /* Desktop (lg) */
+  .custom-content p {
+    font-size: 14px;
+  }
+}
+
+/* Image styling */
+.custom-content img {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 4px;
+  max-width: 60%;
+  height: auto;
+}
+
+/* Lists */
+.custom-content li[data-list="bullet"] {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  font-size: 14px;
+}
+
+.custom-content li[data-list="ordered"] {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 14px;
+}
+
+@media (min-width: 640px) {
+  .custom-content li[data-list="bullet"],
+  .custom-content li[data-list="ordered"] {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-content li[data-list="bullet"],
+  .custom-content li[data-list="ordered"] {
+    font-size: 16px;
+  }
+}
+
+.custom-content ol,
+.custom-content ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.custom-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Headings */
+.custom-content h1 {
+  font-size: 24px;
+  color: #222A3F;
+}
+.custom-content h2 {
+  font-size: 20px;
+  color: #222A3F;
+}
+.custom-content h3 {
+  font-size: 18px;
+  color: #222A3F;
+}
+.custom-content h4 {
+  font-size: 16px;
+  color: #222A3F;
+}
+.custom-content h5 {
+  font-size: 14px;
+  color: #222A3F;
+}
+.custom-content h6 {
+  font-size: 12px;
+  color: #222A3F;
+}
+
+/* Responsive heading scaling */
+@media (min-width: 640px) {
+  .custom-content h1 { font-size: 28px; }
+  .custom-content h2 { font-size: 22px; }
+  .custom-content h3 { font-size: 20px; }
+  .custom-content h4 { font-size: 18px; }
+}
+
+@media (min-width: 1024px) {
+  .custom-content h1 { font-size: 32px; }
+  .custom-content h2 { font-size: 24px; }
+  .custom-content h3 { font-size: 20px; }
+  .custom-content h4 { font-size: 18px; }
+}
+
+/* Strong text inside headings */
+.custom-content h1 strong,
+.custom-content h2 strong,
+.custom-content h3 strong,
+.custom-content h4 strong,
+.custom-content h5 strong,
+.custom-content h6 strong {
+  color: #222A3F;
+  font-weight: 600;
+}
+
+/* Links */
+.custom-content a {
+  text-decoration: underline;
+  color: rgba(90,91,92);
+}
+
+.custom-content a:hover {
+  color: rgba(245,175,2);
+}
+
+/* Alignment */
+.custom-content .ql-align-center {
+  text-align: center;
+}
+.custom-content .ql-align-right {
+  text-align: right;
+}
+.custom-content .ql-align-justify {
+  text-align: justify;
+}
+
+/* Font sizes (from ReactQuill) */
+.custom-content .ql-size-small {
+  font-size: 0.8em;
+}
+.custom-content .ql-size-large {
+  font-size: 1.3em;
+}
+.custom-content .ql-size-huge {
+  font-size: 1.8em;
+}
+
+/* Better line height for readability on large screens */
+@media (min-width: 1024px) {
+  .custom-content {
+    line-height: 1.8;
+  }
+}
