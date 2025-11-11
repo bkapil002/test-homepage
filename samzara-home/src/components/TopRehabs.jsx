@@ -25,10 +25,10 @@ export default function TopRehabs() {
       {/* Header */}
       <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-center mb-6 md:mb-10 gap-6">
         <div className="w-full md:w-auto">
-          <h1 className="text-2xl text-center sm:text-4xl md:text-[50px] md:text-left text-[#2A2A72] mb-3">
+          <h1 className="text-2xl text-center sm:text-4xl md:text-[50px] md:text-left text-[#052488] mb-3">
             Top Rehabs near You
           </h1>
-          <p className="text-gray-600 text-center mb-4 md:mb-8 text-sm sm:text-base">
+          <p className="text-[#3C3C3C] text-center mb-4 md:mb-8 text-sm sm:text-base">
             Most Brilliant reasons SamZara should be your one-stop-shop!
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function TopRehabs() {
                       setIsOpen(false);
                       setPage(0);
                     }}
-                    className="w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors duration-150 first:rounded-t-lg last:rounded-b-lg"
+                    className="w-full text-left px-4 py-3 text-sm text-[#2A2A72] hover:bg-gray-50 transition-colors duration-150 first:rounded-t-lg last:rounded-b-lg"
                   >
                     {city}
                   </button>

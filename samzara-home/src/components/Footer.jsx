@@ -1,5 +1,6 @@
-import React from "react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn  } from "react-icons/fa";
 import left from "../Image/left.png";
+import glob from "../Image/glob2.png";
 export default function Footer() {
   return (
     <footer className="bg-white py-6 sm:py-10  font-sans px-4 sm:px-8 md:px-19 lg:px-16">
@@ -9,7 +10,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-2 space-y-2 sm:space-y-0">
             <div className="flex items-center gap-1">
               <svg
-                className="w-6 h-6 text-[#222A3F]"
+                className="w-5 h-5 text-[#1D293F]"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -18,15 +19,15 @@ export default function Footer() {
                 <circle cx="12" cy="12" r="10" />
                 <path d="M8 12h8" />
               </svg>
-              <span className="font-semibold text-base sm:text-lg text-[#222A3F]">
+              <span className="font-semibold text-base sm:text-lg text-[#1D293F]">
                 QUICK LINKS
               </span>
+              <span className="text-[#626C8B] text-sm">
+                Explore more categories
+              </span>
             </div>
-            <span className="text-[#626C8B] text-sm">
-              Explore more categories
-            </span>
           </div>
-          <div className="flex flex-wrap gap-4 mt-2 text-sm text-[#626C8B] font-medium">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-4 mt-2 ml-6 text-sm text-[#546179] font-medium">
             <a
               href="https://findrehabcentres.com/find-a-rehab-centre-near-you"
               target="_blank"
@@ -61,17 +62,17 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row font-medium items-start sm:items-center gap-2 text-[#222A3F] text-sm sm:text-base">
+        <div className="flex flex-col sm:flex-row font-medium items-start sm:items-center gap-2 text-[#040406] text-sm sm:text-base">
           <a
             href="tel:+917300677006"
-            className="text-[#222A3F] hover:underline"
+            className="text-[#040406] hover:underline"
           >
             +91 73006 77006
           </a>
           <span className="hidden sm:inline">|</span>
           <a
             href="mailto:info@findrehabcentres.com?subject=Inquiry&body=Hello%20there"
-            className="text-[#222A3F] underline"
+            className="text-[#040406] underline"
           >
             info@findrehabcentres.com
           </a>
@@ -84,18 +85,18 @@ export default function Footer() {
           {/* Left Side */}
           <div className="w-full lg:w-auto mb-6 lg:mb-0">
             <div className="mb-4">
-              <div className="text-[#2c2c73] font-semibold text-sm sm:text-[14px]">
-                Nearby Meetings
+              <div className="text-[#626C8B]  text-sm sm:text-[14px]">
+                Visit SamZara
               </div>
               <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-                <div className="text-xl sm:text-2xl md:text-[30px] font-semibold text-[#1d293f] leading-tight mt-2 mb-2">
+                <div className="text-xl sm:text-2xl md:text-[30px] font-semibold text-[#1D293F] leading-tight mt-2 mb-2">
                   With You on <br /> Your Road to Recovery
                 </div>
                 <a
                   href="https://samzara.in"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#2C2D5B] cursor-pointer flex justify-center items-center text-[13px] mt-2 sm:mt-9 text-white rounded-md h-9 px-6 font-medium shadow transition w-full sm:w-auto"
+                  className="bg-[#2A2A72] hover:bg-[#149a49] cursor-pointer flex justify-center items-center text-[15px] -mt-1 sm:mt-10 text-white rounded-md h-10 px-9 font-medium shadow transition w-full sm:w-auto"
                 >
                   Explore
                 </a>
@@ -105,43 +106,57 @@ export default function Footer() {
 
           {/* Right Side */}
           <div className="flex flex-col justify-end w-full lg:w-auto">
-            <div className="flex items-center mb-6">
-              <div className="bg-[#2C2D5B] rounded-full p-2 mr-4 flex items-center justify-center">
-                {/* Globe Icon */}
-                <svg
-                  className="h-8 w-8 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <circle
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  />
-                  <path
-                    d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  />
-                </svg>
+            <div className="flex items-center mb-4">
+              <div className="bg-[#2C2D5B] w-[50px] h-[50px] rounded-full flex items-center justify-center mr-4">
+                <img
+                  src={glob}
+                  alt="Globe Icon"
+                  className="w-10 h-10 object-contain"
+                />
               </div>
               <div>
                 <a
                   href="https://findrehabcentres.com/contact-find-rehab-centres"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#1d293f] font-bold flex text-sm sm:text-[15px] items-center cursor-pointer gap-2"
+                  className="text-[#1D293F] font-bold flex text-sm sm:text-[15px] items-center cursor-pointer gap-2"
                 >
-                  <p> Reach Us</p> <img src={left} className="w-7 h-3"  loading="lazy"/>
+                  <p> Reach Us</p>{" "}
+                  <img src={left} className="w-7 h-3" loading="lazy" />
                 </a>
-                <div className="font-bold text-[#626C8B] text-xs sm:text-base">
+                <div className="font-bold text-[#546179] text-xs sm:text-base">
                   We're there for you.
                 </div>
                 <div className="mt-2"></div>
               </div>
+            </div>
+            <div className="flex items-center md:justify-end justify-start gap-4 ">
+              <a
+                href="https://www.facebook.com/findrehabcentre"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2A2A72] hover:scale-110 transition-transform"
+              >
+                <FaFacebookF size={22} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/findrehabcentre"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2A2A72] hover:scale-110 transition-transform"
+              >
+                <FaInstagram size={22} />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/find-rehab-centre"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2A2A72] hover:scale-110 transition-transform"
+              >
+                <FaLinkedinIn  size={22} />
+              </a>
             </div>
           </div>
         </div>
@@ -151,7 +166,10 @@ export default function Footer() {
         <div className="mt-3">
           <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
             <div>
-              <ul className="space-y-2 flex-col font-semibold text-[#222A3F] text-sm sm:text-base">
+              <div className="text-[#626C8B] flex justify-start  text-sm sm:text-[14px]">
+                Do you have a rehab centre?
+              </div>
+              <ul className="space-y-2 flex-col font-semibold text-[#1D293F] text-sm sm:text-base">
                 <a
                   href="https://findrehabcentres.com/list-on-best-directory-of-rehab-centres-in-india"
                   target="_blank"
@@ -181,8 +199,8 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="w-full sm:w-auto mt-4 sm:mt-0">
-              <div className="text-[#222A3F] flex justify-start sm:justify-end font-semibold text-sm sm:text-[14px]">
+            <div className="w-full sm:w-auto mt-0 sm:-mt-4.5">
+              <div className="text-[#626C8B] flex justify-start sm:justify-end text-sm sm:text-[14px]">
                 Get In Touch
               </div>
               <div className="flex items-center justify-start sm:justify-end space-x-2 mt-1 ">
@@ -190,7 +208,7 @@ export default function Footer() {
                   href="https://findrehabcentres.com/contact-find-rehab-centres"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold cursor-pointer text-[#1d293f] text-base sm:text-[19px]"
+                  className="font-semibold cursor-pointer text-[#1D293F] text-sm sm:text-base"
                 >
                   Let’s Talk
                 </a>
@@ -200,7 +218,7 @@ export default function Footer() {
                   href="https://findrehabcentres.com/work-with-find-rehab-centres"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold cursor-pointer text-[#1d293f] text-base sm:text-[19px]"
+                  className="font-semibold cursor-pointer text-[#1D293F] text-sm sm:text-base"
                 >
                   Work with us
                 </a>
@@ -213,21 +231,15 @@ export default function Footer() {
       {/* Bottom Row */}
       <div className="mt-6 border-t border-[#e7e7e7] pt-4 text-xs text-[#626C8B]">
         <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
-          <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 mb-2 md:mb-0">
-            <a
-              href="disclaimer"
-              className="hover:underline"
-            >
+          <div className="flex flex-col text-[#1D293F] sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 mb-2 md:mb-0">
+            <a href="disclaimer" className="hover:underline">
               Disclaimer
             </a>
-            <a
-              href="/privacy-policy"
-              className="hover:underline"
-            >
+            <a href="/privacy-policy" className="hover:underline">
               Privacy Policy
             </a>
           </div>
-          <div className="text-left md:text-right">
+          <div className="text-left text-[#1D293F] md:text-right">
             2024 ©
             <a href="#" className=" font-bold underline cursor-pointer">
               SamZara India Pvt Ltd.

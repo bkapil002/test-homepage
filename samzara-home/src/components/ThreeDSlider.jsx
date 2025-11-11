@@ -21,9 +21,9 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  color: #20318c;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  color: #052488;
   margin-bottom: 8px;
   text-align: right;
 

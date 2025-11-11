@@ -110,7 +110,7 @@ const BlogSlider = () => {
                 </div>
               {/* Content */}
               <div className="p-6 flex-grow flex flex-col">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900 line-clamp-2 hover:text-[#2C2D5B] transition-colors cursor-pointer">
+                  <h3 className="text-xl font-bold mb-3 text-[#1D293F] line-clamp-2  transition-colors cursor-pointer">
                   {post.heading}
                 </h3>        
               </div>

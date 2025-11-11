@@ -24,7 +24,7 @@ const Home = () => {
     <div>
       {/* Hero Section with Video */}
       <div
-        className="w-full mt-3 overflow-hidden px-4 sm:px-8 md:px-19 lg:px-16"
+        className="w-full  overflow-hidden "
         data-aos="fade-in"
       >
         <video
@@ -33,7 +33,7 @@ const Home = () => {
           loop
           muted
            playsInline
-          className="w-full rounded-2xl h-[90vh] md:h-auto lg:h-auto object-cover"
+          className="w-full  h-[90vh] md:h-auto lg:h-auto object-cover"
           fetchpriority="high"
           preload="metadata"
         />
@@ -47,7 +47,7 @@ const Home = () => {
       >
         {/* Heading */}
         <h1
-          className="text-2xl sm:text-4xl md:text-[50px] text-center md:text-right text-[#2A2A72] mb-6"
+          className="text-2xl sm:text-4xl md:text-[50px] text-center md:text-right text-[#052488] mb-6"
           data-aos="fade-up"
         >
           De-Addiction Anonymous
@@ -70,7 +70,7 @@ const Home = () => {
 
           {/* Right Side - Content */}
           <div className="flex-1 flex flex-col w-full" data-aos="fade-up">
-            <p className="text-gray-700 text-center md:text-right mb-6 text-sm sm:text-base">
+            <p className="text-[#3C3C3C] text-center md:text-right mb-6 text-sm sm:text-base">
               <b>Samzara is a social network with a purpose. Built for people who
               believe in connection, compassion, and change.</b> <br/>A safe and
               inclusive space to share your journey, exchange hope stories, and
@@ -91,7 +91,7 @@ const Home = () => {
                 href="https://community.samzara.in"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#2A2A72] flex justify-center items-center cursor-pointer text-[14px] text-white px-5 py-2 rounded-md w-full sm:w-auto transition"
+                className="bg-[#2A2A72] hover:bg-[#149a49] flex justify-center items-center cursor-pointer text-[14px] text-white px-5 py-2 rounded-md w-full sm:w-auto transition"
               >
                 Join Online Meeting
               </a>
@@ -108,7 +108,7 @@ const Home = () => {
       >
         {/* Heading */}
         <h1
-          className="text-2xl sm:text-4xl md:text-[50px] text-center md:text-left text-[#2A2A72] mb-6"
+          className="text-2xl sm:text-4xl md:text-[50px] text-center md:text-left text-[#052488] mb-6"
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
         >
@@ -159,7 +159,7 @@ const Home = () => {
                 href="https://findrehabcentres.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#2A2A72] flex justify-center items-center cursor-pointer text-[14px] text-white px-6 py-2 rounded-md w-full sm:w-auto transition"
+                className="bg-[#2A2A72] hover:bg-[#149a49] flex justify-center items-center cursor-pointer text-[14px] text-white px-6 py-2 rounded-md w-full sm:w-auto transition"
               >
                 Get Started
               </a>
