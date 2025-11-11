@@ -24,7 +24,7 @@ const Home = () => {
     <div>
       {/* Hero Section with Video */}
       <div
-        className="w-full  overflow-hidden "
+        className="w-full shadow-xl/20   overflow-hidden "
         data-aos="fade-in"
       >
         <video
@@ -33,15 +33,17 @@ const Home = () => {
           loop
           muted
            playsInline
-          className="w-full  h-[90vh] md:h-auto lg:h-auto object-cover"
+          className="w-full  h-[90vh]  rounded-b-[3px] md:h-auto lg:h-auto object-cover"
           fetchpriority="high"
           preload="metadata"
         />
       </div>
 
       {/* De-Addiction Section */}
+      <div  className=" flex justify-center py-15 md:py-18 px-4 sm:px-8 md:px-19 lg:px-16">
       <div
-        className="w-full py-8 md:py-12 px-4 sm:px-8 md:px-19 lg:px-16"
+        className=" w-285"
+       
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
       >
@@ -99,10 +101,12 @@ const Home = () => {
           </div>
         </div>
       </div>
+      </div>
 
       {/* Doctors Section */}
+       <div className=" flex justify-center py-9 md:py-10 px-4 sm:px-8 md:px-19 lg:px-16">
       <div
-        className="w-full py-8 md:py-12 px-4 sm:px-8 md:px-19 lg:px-16"
+        className="w-285"
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
       >
@@ -167,9 +171,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+      </div>
 
       {/* Extra Components */}
-      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div  data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <ThreeDSlider />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">

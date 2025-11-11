@@ -21,9 +21,11 @@ export default function TopRehabs() {
   );
 
   return (
-    <div className="bg-white flex flex-col items-center mt-9 w-full px-4 sm:px-8 md:px-19 lg:px-16">
+    <div className="mt-10 flex justify-center w-full px-4 sm:px-8 md:px-19 lg:px-16">
+      <div className="w-285">
+    <div className="bg-white flex flex-col items-center">
       {/* Header */}
-      <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-center mb-6 md:mb-10 gap-6">
+      <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-center mb-6 md:mb-5 gap-6">
         <div className="w-full md:w-auto">
           <h1 className="text-2xl text-center sm:text-4xl md:text-[50px] md:text-left text-[#052488] mb-3">
             Top Rehabs near You
@@ -119,6 +121,8 @@ export default function TopRehabs() {
       ) : (
         <p className="text-gray-500 text-lg">No rehabs found.</p>
       )}
+    </div>
+    </div>
     </div>
   );
 }

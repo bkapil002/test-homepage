@@ -3,8 +3,8 @@ import left from "../Image/left.png";
 import glob from "../Image/glob2.png";
 export default function Footer() {
   return (
-    <footer className="bg-white py-6 sm:py-10  font-sans px-4 sm:px-8 md:px-19 lg:px-16">
-      {/* Top Row */}
+    <footer className="bg-[#f4f4f4] border-t-gray-200 border-t-[1px] justify-center flex pt-15  font-sans pb-4 py-6 sm:py-10   px-4 sm:px-8 md:px-19 lg:px-16 ">
+      <div className="w-285">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between border-b border-[#e7e7e7] pb-4 gap-4">
         <div className="w-full md:w-auto">
           <div className="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-2 space-y-2 sm:space-y-0">
@@ -247,6 +247,8 @@ export default function Footer() {
             All rights reserved.
           </div>
         </div>
+      </div>
+
       </div>
     </footer>
   );

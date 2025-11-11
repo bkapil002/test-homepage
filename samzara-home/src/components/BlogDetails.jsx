@@ -124,15 +124,17 @@ const BlogDetails = () => {
       )}
 
       {/* ✅ Blog Content Section */}
-      <div
-        className="prose custom-content  px-4 sm:px-8 md:px-19 lg:px-16    max-w-none mb-8  "
-        style={{
-          color: "#3C3C3C",
-          fontSize: "14px",
-          lineHeight: "1.7",
-        }}
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
+      <div className="flex justify-center">
+  <div
+    className="prose custom-content w-285 px-4 sm:px-0 md:px-0 lg:px-0 max-w-none mb-8"
+    style={{
+      color: "#3C3C3C",
+      fontSize: "14px",
+      lineHeight: "1.7",
+    }}
+    dangerouslySetInnerHTML={{ __html: post.content }}
+  />
+</div>
     </div>
   );
 };

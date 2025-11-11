@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation ,Autoplay} from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import { ChevronLeft ,ChevronRight  } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const BlogSlider = () => {
@@ -16,8 +16,10 @@ const BlogSlider = () => {
     const fetchPosts = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`http://localhost:8000/api/posts/all-posts`); 
-        console.log(res.data)
+        const res = await axios.get(
+          `http://localhost:8000/api/posts/all-posts`
+        );
+        console.log(res.data);
         setPosts(res.data);
       } catch (err) {
         console.error("Error fetching posts:", err);
@@ -30,41 +32,44 @@ const BlogSlider = () => {
 
   if (loading) {
     return (
-       <div className="w-full max-w-7xl mx-auto py-8 px-4 sm:px-8 md:px-19 lg:px-16 ">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    {[1, 2, 3].map((index) => (
-      <div
-        key={index}
-        className={`bg-white rounded-lg overflow-hidden shadow-lg animate-pulse
+      <div className="w-full max-w-7xl mx-auto py-8 px-4 sm:px-8 md:px-19 lg:px-16 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[1, 2, 3].map((index) => (
+            <div
+              key={index}
+              className={`bg-white rounded-lg overflow-hidden shadow-lg animate-pulse
           ${index === 2 ? "hidden sm:block lg:block" : ""}
           ${index === 3 ? "hidden lg:block" : ""}`}
-      >
-        <div className="relative h-64 w-full bg-gray-200"></div>
+            >
+              <div className="relative h-64 w-full bg-gray-200"></div>
 
-        <div className="p-6 space-y-4">
-          <div className="h-6 bg-gray-200 rounded w-3/4"></div>
-          <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+              <div className="p-6 space-y-4">
+                <div className="h-6 bg-gray-200 rounded w-3/4"></div>
+                <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    ))}
-  </div>
-</div>
     );
   }
 
   if (posts.length === 0) {
-    return (
-      <div className="w-full max-w-7xl mx-auto py-8 px-4">
-       
-      </div>
-    );
+    return <div className="w-full max-w-7xl mx-auto py-8 px-4"></div>;
   }
 
   return (
-    <div className="w-full px-4 sm:px-8 md:px-19 lg:px-16 max-w-7xl mx-auto py-8 ">
-      
+    <div className="w-full px-4 sm:px-8 md:px-19 lg:px-17.5 max-w-7xl mx-auto py-6 ">
+      <div className="w-full md:w-auto">
+        <h1 className="text-2xl text-center sm:text-4xl md:text-[50px] md:text-left text-[#052488] mb-2">
+          Latest Articles
+        </h1>
+        <p className="text-[#3C3C3C] text-center md:text-left mb-4 md:mb-8 text-sm sm:text-base">
+          Discover stories and tips on recovery and wellness
+        </p>
+      </div>
       <Swiper
-        modules={[Navigation,Autoplay]}
+        modules={[Navigation, Autoplay]}
         navigation={{
           nextEl: ".custom-next-button",
           prevEl: ".custom-prev-button",
@@ -72,9 +77,9 @@ const BlogSlider = () => {
         spaceBetween={20}
         slidesPerView={1}
         loop={posts.length > 3}
-         autoplay={{
-          delay: 3000, 
-          disableOnInteraction: false, 
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
         }}
         breakpoints={{
           640: {
@@ -89,30 +94,38 @@ const BlogSlider = () => {
       >
         {posts.map((post) => (
           <SwiperSlide key={post._id}>
-            <div onClick={() => navigate(`/blog/${post.slug}`)}  className="bg-white cursor-pointer rounded-lg overflow-hidden shadow-lg h-full flex flex-col hover:shadow-xl transition-shadow">
+            <div
+              onClick={() => navigate(`/blog/${post.slug}`)}
+              className="bg-white cursor-pointer rounded-lg overflow-hidden shadow-lg h-full flex flex-col hover:shadow-xl transition-shadow"
+            >
               {/* Date Badge */}
-               <div className="absolute top-4 left-4 bg-white rounded-[5px] shadow-md p-3 z-10">
+              <div className="absolute top-4 left-4 bg-white rounded-[5px] shadow-md p-3 z-10">
                 <div className="text-[21px] text-center font-bold text-[#4d4d4d]">
                   {new Date(post.createdAt).getDate()}
                 </div>
                 <div className="  border-[1px] -mt-1 mb-0.5 text-[#4d4d4d] " />
                 <div className="text-xs text-[#4d4d4d] uppercase">
-                  {new Date(post.createdAt).toLocaleString('en', { month: 'short' })}
+                  {new Date(post.createdAt).toLocaleString("en", {
+                    month: "short",
+                  })}
                 </div>
               </div>
-                <div className="relative h-64 w-full overflow-hidden">
-                  <img
-                    src={post.mainImage || "https://findrehabcentres.com/wp-content/uploads/2025/10/Taking-the-First-Step-Toward-Healing.jpg" }
-                    alt={post.heading}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
-                  />
-                </div>
+              <div className="relative h-64 w-full overflow-hidden">
+                <img
+                  src={
+                    post.mainImage ||
+                    "https://findrehabcentres.com/wp-content/uploads/2025/10/Taking-the-First-Step-Toward-Healing.jpg"
+                  }
+                  alt={post.heading}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
               {/* Content */}
               <div className="p-6 flex-grow flex flex-col">
-                  <h3 className="text-xl font-bold mb-3 text-[#1D293F] line-clamp-2  transition-colors cursor-pointer">
+                <h3 className="text-xl font-bold mb-3 text-[#1D293F] line-clamp-2  transition-colors cursor-pointer">
                   {post.heading}
-                </h3>        
+                </h3>
               </div>
             </div>
           </SwiperSlide>
