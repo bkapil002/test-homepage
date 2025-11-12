@@ -122,7 +122,7 @@ export default function Footer() {
                   className="text-[#1D293F] font-bold flex text-sm sm:text-[15px] items-center cursor-pointer gap-2"
                 >
                   <p> Reach Us</p>{" "}
-                  <img src={left} className="w-7 h-3" loading="lazy" />
+                  <img src={left} alt="left" className="w-7 h-3" loading="lazy" />
                 </a>
                 <div className="font-bold text-[#546179] text-xs sm:text-base">
                   We're there for you.

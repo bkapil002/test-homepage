@@ -18,17 +18,17 @@ import { HelmetProvider } from "react-helmet-async";
 function PublicLayout() {
   return (
     <>
+    <HelmetProvider>
       <Navebar />
-      <HelmetProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog/:slug" element={<BlogDetails />} />
         <Route path="/disclaimer" element={<SamzaraDisclaimer />} />
         <Route path="/privacy-policy" element={<SamzaraPrivacyPolicy />} />
       </Routes>
-      </HelmetProvider>
       <ScrollButton/>
       <Footer />
+      </HelmetProvider>
     </>
   );
 }

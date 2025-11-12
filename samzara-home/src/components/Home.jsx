@@ -10,6 +10,7 @@ import video from "../Image/video.mp4";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BlogSlider from "./BlogSlider";
+import SEO from "../componentsecond/SEO";
 
 const Home = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const Home = () => {
 
   return (
     <div>
+      <SEO title='Samzara' description='Samzara'/>
       {/* Hero Section with Video */}
       <div
         className="w-full shadow-xl/20   overflow-hidden "

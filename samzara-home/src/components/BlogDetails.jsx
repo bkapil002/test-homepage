@@ -3,10 +3,14 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Share2 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import SEO from "../componentsecond/SEO";
 const BlogDetails = () => {
   const { slug } = useParams();
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
+  const addAltToImages = (html, altText = "Blog image") => {
+  return html.replace(/<img(?![^>]*alt=)/g, `<img alt="${altText}"`);
+};
   useEffect(() => {
     window.scrollTo(0, 0);
 
@@ -72,19 +76,13 @@ const BlogDetails = () => {
 
   if (!post) {
     return (
-      <div className="text-center text-red-600 mt-10">Post not found 😞</div>
+      <div className="text-center text-red-600 mt-10">Post not found </div>
     );
   }
 
   return (
     <div className="mx-auto">
-      <Helmet>
-        <title>{post.title || post.heading}</title>
-        <meta
-          name="description"
-          content={post.description || post.content.slice(0, 160)}
-        />
-      </Helmet>
+      <SEO title={post.title || post.heading} description={post.description || post.content.slice(0, 160)}/>
       {post.mainImage && (
         <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-[420px] overflow-hidden mb-8">
           {/* Banner Image */}
@@ -132,7 +130,7 @@ const BlogDetails = () => {
       fontSize: "14px",
       lineHeight: "1.7",
     }}
-    dangerouslySetInnerHTML={{ __html: post.content }}
+    dangerouslySetInnerHTML={{ __html: addAltToImages(post.content, post.heading) }}
   />
 </div>
     </div>
