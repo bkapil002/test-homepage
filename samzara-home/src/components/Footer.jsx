@@ -64,15 +64,8 @@ export default function Footer() {
         </div>
         <div className="flex flex-col sm:flex-row font-medium items-start sm:items-center gap-2 text-[#040406] text-sm sm:text-base">
           <a
-            href="tel:+917300677006"
-            className="text-[#040406] hover:underline"
-          >
-            +91 73006 77006
-          </a>
-          <span className="hidden sm:inline">|</span>
-          <a
             href="mailto:info@findrehabcentres.com?subject=Inquiry&body=Hello%20there"
-            className="text-[#040406] underline"
+            className="text-[#1D293F] underline"
           >
             info@findrehabcentres.com
           </a>

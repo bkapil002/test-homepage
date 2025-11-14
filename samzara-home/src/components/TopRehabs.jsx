@@ -21,7 +21,7 @@ export default function TopRehabs() {
   );
 
   return (
-    <div className="mt-10 flex justify-center w-full px-4 sm:px-8 md:px-19 lg:px-16">
+    <div className="mt-22 flex justify-center w-full px-4 sm:px-8 md:px-19 lg:px-16">
       <div className="w-285">
     <div className="bg-white flex flex-col items-center">
       {/* Header */}

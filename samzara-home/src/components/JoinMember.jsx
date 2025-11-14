@@ -2,7 +2,7 @@ import React from "react";
 
 const JoinMember = () => {
   return (
-    <div className="mb-12 sm:mb-15 mt-20 px-4 sm:px-8 md:px-19 lg:px-16">
+    <div className="mb-12 sm:mb-15 mt-14   px-4 sm:px-8 md:px-19 lg:px-16">
       <div className="bg-gradient-to-r from-green-600 to-green-500 rounded-xl p-4 sm:p-10 text-center text-white max-w-full sm:max-w-3xl md:max-w-5xl mx-auto">
         <h2 className="text-lg sm:text-2xl md:text-3xl font-semibold leading-snug">
           Join our <span className="font-bold text-white">0</span> Members Sharing Strength and Hope

@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import samzaraimage from "../Image/Samzara.png";
+import samzaraimage from "../Image/cover.png";
 import image from "../Image/LOGO.png";
 
 const LoginForm = () => {

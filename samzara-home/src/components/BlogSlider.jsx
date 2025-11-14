@@ -59,7 +59,7 @@ const BlogSlider = () => {
   }
 
   return (
-    <div className="w-full px-4 sm:px-8 md:px-19 lg:px-17.5 max-w-7xl mx-auto py-6 ">
+    <div className="w-full px-4 sm:px-8 md:px-19 lg:px-17.5 max-w-7xl mx-auto py-4  mb-10">
       <div className="w-full md:w-auto">
         <h1 className="text-2xl text-center sm:text-4xl md:text-[50px] md:text-left text-[#052488] mb-2">
           Latest Articles
