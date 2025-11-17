@@ -15,10 +15,10 @@ export const rehabs = [
   },
   { 
     id: 3,
-    name: "Centre for Substance", 
+    name: "Gram Vikas Parishad", 
     location: "Assam", 
-    image: "https://findrehabcentres.com/wp-content/uploads/2024/07/Centre-for-Substance-Abuse-Prevention-Care-Guwahati-Assam-781037-455x340.jpg",
-    link: "https://findrehabcentres.com/centre/centre-for-substance-abuse-prevention-care-guwahati-assam-781037"
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2025/10/gram-vikas-parisad.jpg",
+    link: "https://www.findrehabcentres.com/centre/gram-vikas-parishad"
   },
   { 
     id: 4,
@@ -62,10 +62,10 @@ export const rehabs = [
   },
   { 
     id: 9,
-    name: "Sanctum Wellness", 
+    name: "Roar Wellness Rehabilitation Centre", 
     location: "Delhi", 
-    image: "https://findrehabcentres.com/wp-content/uploads/2024/05/Sanctum-Wellness-And-Healing-New-Delhi-Delhi-110074-455x306.png",
-    link: "https://findrehabcentres.com/centre/sanctum-wellness-and-healing-new-delhi-delhi-110074"
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2024/05/Roar-Wellness-Rehabilitation-Centre-New-Delhi-Delhi-110074.jpg",
+    link: "https://www.findrehabcentres.com/centre/roar-wellness-rehabilitation-centre-new-delhi-delhi-110074"
   },
   { 
     id: 10,
@@ -108,10 +108,10 @@ export const rehabs = [
   },
   { 
     id: 15,
-    name: "Aura Care Foundation", 
+    name: "Freedom Foundation", 
     location: "Himachal Pradesh", 
-    image: "https://findrehabcentres.com/wp-content/uploads/2024/09/Aura-Care-Foundation-Solan-Himachal-Pradesh-173207-455x340.jpg",
-    link: "https://findrehabcentres.com/centre/aura-care-foundation-solan-himachal-pradesh-173207-2"
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2024/09/Freedom-Foundation-Solan-Himachal-Pradesh-173204-1024x559.jpg",
+    link: "https://www.findrehabcentres.com/centre/freedom-foundation-solan-himachal-pradesh-173204/"
   },
   { 
     id: 16,
@@ -147,17 +147,17 @@ export const rehabs = [
   },
   { 
     id: 20,
-    name: "Indian Red Cross", 
+    name: "True Humaniversity Foundation ", 
     location: "Haryana", 
-    image: "https://findrehabcentres.com/wp-content/uploads/2024/06/Indian-Red-Cross-in-Rohtak-Haryana-455x340.jpg",
-    link: "https://findrehabcentres.com/centre/indian-red-cross-in-rohtak-haryana"
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2024/05/True-Humaniversity-Foundation-–-Gurgaon-Gurugram-Haryana-122001.jpg",
+    link: "https://www.findrehabcentres.com/centre/true-humaniversity-foundation-gurgaon-gurugram-haryana-122001/"
   },
   { 
     id: 21,
-    name: "Shanti Mission Hospital", 
+    name: "Nai Kiran Nasha Mukti Centre", 
     location: "Haryana", 
-    image: "https://findrehabcentres.com/wp-content/uploads/2024/09/Shanti-Mission-Hospital-Hisar-Haryana-125001-455x323.jpg",
-    link : "https://findrehabcentres.com/centre/shanti-mission-hospital-hisar-haryana-125001"
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2024/09/Nai-Kiran-Nasha-Mukti-Centre-Ambala-Haryana-134007.jpg",
+    link : "https://www.findrehabcentres.com/centre/nai-kiran-nasha-mukti-centre-ambala-haryana-134007"
   },
 
   { 
@@ -169,17 +169,17 @@ export const rehabs = [
   },
   { 
     id: 23,
-    name: "Committee On Socio", 
+    name: "New Life De-Addiction Centre ", 
     location: "Assam", 
-    image: "https://findrehabcentres.com/wp-content/uploads/2024/06/Committee-On-Socio-Economic-Health-Development-Assam-in-Guwahati-Assam-455x340.jpg",
-    link: "https://findrehabcentres.com/centre/committee-on-socio-economic-health-development-assam-in-guwahati-assam"
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2024/05/Nirmaan-Rehabilitation-Facility-Guwahati-Assam-781037-1024x862.jpg",
+    link: "https://www.findrehabcentres.com/centre/new-life-de-addiction-centre-for-drugs-and-alcohol-dibrugarh-assam-786003"
   },
   { 
     id: 24,
-    name: "Assam Medical College", 
+    name: "Optimus Psychiatry Clinic", 
     location: "Assam", 
-    image: "https://findrehabcentres.com/wp-content/uploads/2024/09/Assam-Medical-College-And-Hospital-Dibrugarh-Assam-786002-455x340.jpg",
-    link: "https://findrehabcentres.com/centre/assam-medical-college-and-hospital-dibrugarh-assam-786002"
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2024/05/Optimus-Psychiatry-Clinic-Guwahati-Assam-781022-1024x676.jpeg",
+    link: "https://www.findrehabcentres.com/centre/optimus-psychiatry-clinic-guwahati-assam-781022"
   },
 
 
@@ -200,10 +200,10 @@ export const rehabs = [
   },
   { 
     id: 27,
-    name: "Critical Care Hospital", 
+    name: "Assam Medical College And Hospital", 
     location: "Assam", 
-    image: "https://findrehabcentres.com/wp-content/uploads/2024/05/Critical-Care-Hospital-Research-Center-Guwahati-Assam-455x340.jpg",
-    link: "https://findrehabcentres.com/centre/critical-care-hospital-research-center-guwahati-assam-781029"
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2024/09/Assam-Medical-College-And-Hospital-Dibrugarh-Assam-786002.jpg",
+    link: "https://www.findrehabcentres.com/centre/assam-medical-college-and-hospital-dibrugarh-assam-786002/"
   },
 
   { 
@@ -248,10 +248,10 @@ export const rehabs = [
   },
   { 
     id: 33,
-    name: "Government drug rehabilitation", 
+    name: "Parivartan de-addiction & rehabilitation", 
     location: "Punjab", 
-    image: "https://findrehabcentres.com/wp-content/uploads/2025/06/Government-drug-rehabilitation-centre-Nawanshahr-Punjab-455x340.jpg",
-    link: "https://findrehabcentres.com/centre/government-drug-rehabilitation-centre"
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2025/06/2025-02-22-1.jpg",
+    link: "https://www.findrehabcentres.com/centre/parivartan-de-addiction-rehabilitation-center"
   },
   { 
     id: 34,
@@ -270,11 +270,43 @@ export const rehabs = [
   ,
   { 
     id: 36,
-    name: "Rehab centre Sheikhe", 
+    name: "De-Addiction Centre", 
     location: "Punjab", 
-    image: "https://findrehabcentres.com/wp-content/uploads/2025/06/Screenshot-2025-07-11-182153-1-455x340.jpg",
-    link: "https://findrehabcentres.com/centre/rehab-centre-sheikhe"
-  }
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2025/06/unnamed-5-1-2.jpg",
+    link: "https://www.findrehabcentres.com/centre/de-addiction-centre"
+  },
+
+
+  { 
+    id: 37,
+    name: "Bhopal De-Addiction Centre", 
+    location: "Madhya Pradesh", 
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2024/08/Deaddiction-Center-Plot-No-1-And-9-A-Sector-Sarvdharm-Colony-Near-Sarvdharm-Bridge-Sarvdharm-Colony-Kolar-Road-Madhya-Pradesh-462042.jpg",
+    link: "https://www.findrehabcentres.com/centre/bhopal-de-addiction-centre-bhopal-madhya-pradesh-462024"
+  },
+    { 
+    id: 38,
+    name: "Mindbliss Hospital", 
+    location: "Himachal Pradesh", 
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2024/09/Mindbliss-Hospital-Depression-Treatment-Mental-Health-Psychiatrist-Sexologist-Rehabilitation-Centre-In-Una-Hp-Una-Himachal-Pradesh-174301.jpeg",
+    link: "https://www.findrehabcentres.com/centre/mindbliss-hospital-depression-treatment-mental-health-psychiatrist-sexologist-rehabilitation-centre-in-una-hp-una-himachal-pradesh-174301-2/"
+  },
+
+
+   { 
+    id: 39,
+    name: "Sham Mind Neuropsychiastry & De-Addiction", 
+    location: "Haryana", 
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2024/08/Sham-Mind-Neuropsychiastry-De-Addiction-Chandigarh-Haryana-140119.jpg",
+    link: "https://www.findrehabcentres.com/centre/sham-mind-neuropsychiastry-de-addiction-chandigarh-haryana-140119"
+  },
+    { 
+    id: 40,
+    name: "Shanti Mission Hospital", 
+    location: "Haryana", 
+    image: "https://www.findrehabcentres.com/wp-content/uploads/2024/09/Shanti-Mission-Hospital-Hisar-Haryana-125001.jpg",
+    link: "http://findrehabcentres.com/centre/shanti-mission-hospital-hisar-haryana-125001/"
+  },
 ];
 
 export const cities = ["All", "Punjab", "Madhya Pradesh", "Assam", "Delhi", "Himachal Pradesh", "Haryana"];

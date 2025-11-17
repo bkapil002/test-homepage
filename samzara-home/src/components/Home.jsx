@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import deaddiction from "../Image/de-addiction.jpg";
-import doctor from "../Image/doctor.jpg";
 import ThreeDSlider from "./ThreeDSlider";
 import JoinMember from "./JoinMember";
-import TopRehabs from "./TopRehabs";
 import video from "../Image/video.mp4";
-import videos from "../Image/docter.mp4"
+import videos from "../Image/docter.mp4";
 
 // AOS imports
 import AOS from "aos";
@@ -45,15 +43,12 @@ const Home = () => {
 
       {/* De-Addiction Section */}
       <div className=" flex justify-center py-15 md:py-29 px-4 sm:px-8 md:px-19 lg:px-16">
-        <div
-          className=" w-285"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-        >
+        <div className=" w-285">
           {/* Heading */}
           <h1
             className="text-2xl sm:text-4xl md:text-[50px] text-center md:text-right text-[#052488] mb-6"
             data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
           >
             De-Addiction Anonymous
           </h1>
@@ -99,6 +94,8 @@ const Home = () => {
                   href="https://community.samzara.in"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
                   className="bg-[#2A2A72] hover:bg-[#149a49] flex justify-center items-center cursor-pointer text-[14px] text-white px-5 py-2 rounded-md w-full sm:w-auto transition"
                 >
                   Join Online Meeting
@@ -113,14 +110,12 @@ const Home = () => {
       <div className=" flex justify-center py-0 md:py-5 px-4 sm:px-8 md:px-19 lg:px-16">
         <div
           className="w-285"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
         >
           {/* Heading */}
           <h1
             className="text-2xl sm:text-4xl md:text-[50px] text-center md:text-left text-[#052488] mb-6"
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
+              data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
           >
             Explore the Docter
           </h1>
@@ -149,7 +144,7 @@ const Home = () => {
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
-              <h4 className="font-semibold text-[#3C3C3C] text-[18px] mb-2 text-center md:text-left">
+              <h4  className="font-semibold text-[#3C3C3C] text-[18px] mb-2 text-center md:text-left">
                 Professional Support That Also Feels Personal.
               </h4>
               <p className="text-[#3C3C3C] mb-6 text-center md:text-left text-sm sm:text-base">
@@ -174,6 +169,8 @@ const Home = () => {
                   href="https://findrehabcentres.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
                   className="bg-[#2A2A72] hover:bg-[#149a49] flex justify-center items-center cursor-pointer text-[14px] text-white px-6 py-2 rounded-md w-full sm:w-auto transition"
                 >
                   Get Started
@@ -200,7 +197,6 @@ const Home = () => {
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <BlogSlider />
       </div>
-      
     </div>
   );
 };

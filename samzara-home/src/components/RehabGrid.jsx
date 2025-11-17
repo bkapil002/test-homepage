@@ -231,6 +231,16 @@ const RehabGrid = () => {
             </div>
           </div>
         )}
+        <div className=" flex pt-14 justify-center ">
+            <a
+          href="https://www.findrehabcentres.com/explore-india"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-2  bg-[#2A2A72] text-white px-8 py-3  rounded-[47px] shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300  "
+        >
+          Explore Rehab Center
+        </a>
+        </div>
       </div>
     </div>
   );

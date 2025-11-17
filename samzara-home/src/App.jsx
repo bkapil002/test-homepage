@@ -20,12 +20,14 @@ function PublicLayout() {
     <>
     <HelmetProvider>
       <Navebar />
+      <div className="mt-17">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog/:slug" element={<BlogDetails />} />
         <Route path="/disclaimer" element={<SamzaraDisclaimer />} />
         <Route path="/privacy-policy" element={<SamzaraPrivacyPolicy />} />
       </Routes>
+      </div>
       <ScrollButton/>
       <Footer />
       </HelmetProvider>
